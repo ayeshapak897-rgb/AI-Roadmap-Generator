@@ -1,56 +1,54 @@
 ````markdown
 # 🗺️ AI Roadmap Generator
 
-An AI-powered personalized learning roadmap generator built with:
+An AI-powered personalized learning roadmap generator.
 
+## Tech Stack
+
+- Python
 - Streamlit
 - Groq API
-- Llama 3.3 70B
+- OpenAI GPT-OSS 120B
 
 ## Features
 
-- Custom learning domain
+- Learning domain selection
 - Beginner / Intermediate / Advanced levels
-- Custom hours per week
-- Custom learning duration
-- Custom learning goal
+- Weekly study hours
+- Learning duration
+- Personalized learning goal
 - AI-generated weekly roadmap
 - Practical tasks
 - Projects
 - Checkpoints
 - Final capstone
-- Download roadmap as Markdown
+- Markdown download
 
 ## Deployment
 
-This application is designed to run directly on Streamlit Community Cloud.
+The application is designed for Streamlit Community Cloud.
 
-No local setup is required.
+No local installation is required.
 
 ## Required Secret
 
-Add the following secret in Streamlit Cloud:
+Add this in Streamlit Cloud Secrets:
 
 ```toml
 GROQ_API_KEY = "your_groq_api_key"
 ````
 
-Never commit your real Groq API key to GitHub.
+Never commit your API key to GitHub.
 
-## Project Structure
+## Model
+
+The application uses:
 
 ```text
-ai-roadmap-generator/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+openai/gpt-oss-120b
 ```
 
-## License
-
-MIT
+through the Groq API.
 
 ```
 ```
