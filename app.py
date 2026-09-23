@@ -1,4 +1,4 @@
-```python
+
 import streamlit as st
 from groq import Groq
 
@@ -633,4 +633,3 @@ if "roadmap" in st.session_state:
             st.session_state.clear()
 
             st.rerun()
-```
